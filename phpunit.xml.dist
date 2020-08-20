@@ -10,6 +10,11 @@
             <directory suffix=".php">tests/phpunit/tests</directory>
         </testsuite>
     </testsuites>
+	<filter>
+		<whitelist processUnceoveredFilesFromWhitelist="true">
+			<directory suffix=".php">includes</directory>
+		</whitelist>
+	</filter>
 	<listeners>
 		<listener class="SpeedTrapListener" file="tests/phpunit/includes/speed-trap-listener.php">
 			<arguments>
